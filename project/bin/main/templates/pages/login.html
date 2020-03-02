@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html 	xmlns:th="http://www.thymeleaf.org" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  		xsi:schemaLocation="http://www.thymeleaf.org ">
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+</head>
+
+<body>
+	<div class="wrapper">
+	<div th:replace="fragments/header :: header"></div>
+		<div class="body">
+			<h1> Sign In </h1>
+			<form name="loginForm" th:action="@{/login}" method="POST"> 
+				<!--Hidden input tag with csrf token is automatically included in form tags with Spring MVC-->
+				Username: <br>
+				<input type="text" name="username" id="usernameInput" required> <br>
+				Password: <br>
+				<input type="password" name="password" id="passwordInput" required> <br>
+				<input type="submit" class="submitBTN" value="Sign In">
+			</form>
+		</div>
+		<div th:replace="fragments/footer :: footer"></div>
+	</div>
+</body>
+
+</html>

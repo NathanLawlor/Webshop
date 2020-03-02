@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="bin/main" path="src/main/java">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="bin/main" path="src/main/resources">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="bin/test" path="src/test/java">
+		<attributes>
+			<attribute name="gradle_scope" value="test"/>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
+	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
+	<classpathentry kind="lib" path="C:/Users/588M/Desktop/STS Projects/lib/thymeleaf-extras-springsecurity4-3.0.4.RELEASE.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="C:/Users/588M/Downloads/spring-test-5.0.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/588M/Downloads/spring-core-5.0.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/588M/Downloads/spring-boot-starter-test-2.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/588M/Downloads/spring-boot-test-2.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/588M/Downloads/spring-boot-test-autoconfigure-2.0.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/588M/Downloads/slf4j-api-1.7.25-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/588M/Downloads/log4j-api-2.10.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/588M/Downloads/jul-to-slf4j-1.7.25-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/588M/Downloads/log4j-to-slf4j-2.10.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/588M/Downloads/commons-logging-1.2.jar"/>
+	<classpathentry kind="output" path="bin/default"/>
+</classpath>

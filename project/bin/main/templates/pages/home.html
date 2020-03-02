@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html 	xmlns:th="http://www.thymeleaf.org" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  		xsi:schemaLocation="http://www.thymeleaf.org"
+  		xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+	<meta charset="UTF-8">
+	<meta name="_csrf" th:content="${_csrf.token}"/>
+	<meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+	
+	<title>Web App Home</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div th:replace="fragments/header :: header"></div>
+		<div class="body">
+			<h1> Welcome To The Home page! </h1>
+		</div>
+		<div th:replace="fragments/footer :: footer"></div>
+	</div>	
+</body>
+</html>

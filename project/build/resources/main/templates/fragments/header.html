@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
+<head>
+<meta charset="UTF-8">
+<title>Header - Navigation Bar</title>
+</head>
+<body>
+	<div class="header" th:fragment="header" th:data-basketsize="${basketSize}">
+		<div class="image-container">
+			<a href="/home"><img class="icon-home" src="" alt="HOME"></a>
+		</div>
+		<ul class="nav-header">
+            <li class="toProduct"><a href="/productPage">Products</a></li>
+            <li class="toBasket"><a id="basket" href="/basket" th:text="'Basket (' + ${basketSize} + ')'">Basket</a></li>
+            <li class="toCheckout"><a href="/checkout">Checkout</a></li>
+        </ul>
+	</div>
+</body>
+</html>

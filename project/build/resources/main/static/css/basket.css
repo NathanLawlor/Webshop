@@ -1,0 +1,69 @@
+@charset "ISO-8859-1";
+* {
+ 	box-sizing: border-box;
+  	margin: 0;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 91%;
+}
+
+.icon-home {
+	width: 125px;
+ 	height: 40px;
+}
+
+.body {
+	width: 100%;
+	height: 91vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #dff9fb;
+}
+
+.basket-info {
+	text-align: center;
+}
+
+.item-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.item {
+	width: 33vw;
+	margin: 10px;
+	border: solid 0.5px black;
+}
+
+.item-info {
+	margin: 5px;
+	display: flex;		
+}
+
+.itemIDandName, .itemPrice {
+	width: 50%;
+	display: flex;
+}
+
+.itemIDandName {
+	flex: 3;
+}
+
+.itemPrice {
+	flex: 1;
+	justify-content: flex-end;
+}
+
+.item-actions {
+	margin: 5px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.view-button, .remove-button {
+	display: inline;
+}

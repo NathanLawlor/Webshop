@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html 	xmlns:th="http://www.thymeleaf.org" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.thymeleaf.org ">
+<head>
+	<meta charset="UTF-8">
+	<meta name="_csrf" th:content="${_csrf.token}"/>
+	<meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+	<title>Web App Product View</title>
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<link rel="stylesheet" type="text/css" href="../css/selectedProductView.css">
+	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"> </script>
+	<script type="text/javascript" src="../js/csrf.js"></script>
+	<script type="text/javascript" src="../js/selectedProductView.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div th:replace="fragments/header :: header"></div>
+		<div class="body" th:data-basketsize="${basketSize}">
+			<div class="item" th:data-productID="${product.id}">
+				<h2 class="productTitle" th:text="${product.id} + ': ' + ${product.name}"></h2>
+				<img class="productImage" th:src="@{'../'+${product.imgSource}}" alt="Product Image">
+				<p class="itemInfo" th:text="'Description: ' + ${product.desc}"></p>
+				<p class="itemInfo" th:text="'Price: £ ' + ${#numbers.formatDecimal(product.price, 0, 2)}"></p>
+				<a class="addToBasketBTN" rel="submit" href="#" onclick="addProductToBasket()">Add Item To Basket</a> 
+			</div>
+		</div>
+		<div th:replace="fragments/footer :: footer"></div>
+	</div>
+</body>
+</html>

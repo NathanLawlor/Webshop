@@ -1,0 +1,29 @@
+@charset "UTF-8";
+.footer {
+	width: 100%;
+	height: fit-content;
+	padding: 5px;
+	display: flex;
+	flex-direction: row;
+	border-top: 2px solid black;
+	margin-top: 15px;
+	background-color: #95afc0;
+}
+
+.nav-footer {
+	width: 90vw;
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+
+ul {
+  	list-style: none;
+  	text-align: center;
+}
+
+li,a {
+	width: 150px;
+	text-decoration: none;
+	color: black;
+}

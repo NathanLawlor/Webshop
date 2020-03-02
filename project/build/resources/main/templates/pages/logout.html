@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html 	xmlns:th="http://www.thymeleaf.org" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  		xsi:schemaLocation="http://www.thymeleaf.org ">
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+</head>
+
+<body>
+	<div class="wrapper">
+	<div th:replace="fragments/header :: header"></div>
+		<div class="body">
+			<h1>Log Out Successful</h1>
+			<p class="returnHome"><a href="home"> Click to return to the home page </a></p>
+		</div>
+		<div th:replace="fragments/footer :: footer"></div>
+	</div>
+</body>
+
+</html>

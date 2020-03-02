@@ -1,0 +1,34 @@
+@charset "UTF-8";
+.header {
+	width: 100%;
+	height: fit-content;
+	padding: 5px;
+	display: flex;
+	flex-direction: row;
+	border-bottom: 2px solid black;
+	background-color: #95afc0;
+}
+
+.nav-header {
+	width: 90vw;
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+}
+
+ul {
+  	list-style: none;
+  	text-align: center;
+}
+
+li,a {
+	width: 100px;
+	text-decoration: none;
+	color: black;
+}
+
+.icon-home {
+	width: 125px;
+	height: 40px;
+}
+

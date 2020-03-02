@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html 	xmlns:th="http://www.thymeleaf.org" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.thymeleaf.org ">
+<head>
+	<meta charset="UTF-8">
+	<title>Web App Checkout</title>
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/checkout.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div th:replace="fragments/header :: header"></div>
+		<div class="body">
+			<h1 class="greeting">Welcome To The Checkout Page!</h1> <br>
+			<p class="priceInfo" th:text="'The total price of your basket is: £' + ${#numbers.formatDecimal(totalPrice, 0, 2)}"></p>
+		</div>
+		<div th:replace="fragments/footer :: footer"></div>
+	</div>
+</body>
+</html>
